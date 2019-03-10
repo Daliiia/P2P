@@ -25,8 +25,7 @@ public class CircuitBreaker {
         while (true) {try (Socket s = new Socket(hostname, port)) {
             if(count <=( maxcount/2))
             {double random = fd.FakeDataGenerator();
-            
-            //System.out.println(s.getInetAddress());
+           
             String   message="sending fake data " + random+"";
             q.add(random);
             s.getOutputStream().write(message.getBytes());
@@ -61,7 +60,7 @@ public class CircuitBreaker {
         }
             
                        
-                //         System.out.println(msg);
+              
 		}
         }
         
