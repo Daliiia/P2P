@@ -19,7 +19,7 @@ public class QueueModel {
     int halfSize=5;
     QueueModel(){
         queue=new PriorityQueue <Double>(); 
-        //System.out.println(">>Queue Created");   
+        
     }
     void add(double dbl) throws IOException{
         if(queue.size()<MaxSize) 
