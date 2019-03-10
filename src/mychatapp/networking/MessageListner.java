@@ -61,7 +61,7 @@ public class MessageListner extends Thread {
           }
             
          }} catch (IOException ex) {
-            // System.out.println("done connection");
+           
          Logger.getLogger(MessageListner.class.getName()).log(Level.SEVERE, null, ex);
      }
     
