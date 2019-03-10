@@ -26,7 +26,6 @@ public class CircuitBreaker {
             if(count <=( maxcount/2))
             {double random = fd.FakeDataGenerator();
             
-            //System.out.println(s.getInetAddress());
             String   message="sending fake data " + random+"";
             q.add(random);
             s.getOutputStream().write(message.getBytes());
